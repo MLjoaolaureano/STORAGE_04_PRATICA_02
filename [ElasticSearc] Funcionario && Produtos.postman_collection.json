@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "d788b78c-3708-40ec-bfd4-66b4e843be57",
+		"name": "[ElasticSearc] Funcionario && Produtos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Funcionario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\":\"Mathias Goularte\",\n    \"idade\": 20,\n    \"cidade\": \"Caxias do Sul\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/funcionarios",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"funcionarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Funcionarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/funcionarios",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"funcionarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Funcionario by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/funcionarios/o7QAFoQBeC-yzgpJYNWY",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"funcionarios",
+						"o7QAFoQBeC-yzgpJYNWY"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Funcionario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": \"orT7FYQBeC-yzgpJ6tX_\",\n        \"nome\": \"Goularte Mathias\",\n        \"idade\": \"91\",\n        \"cidade\": \"Sul de Caxias\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/funcionarios/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"funcionarios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Funcionario",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/funcionarios/o7QAFoQBeC-yzgpJYNWY",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"funcionarios",
+						"o7QAFoQBeC-yzgpJYNWY"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\":\"Cadeira\",\n    \"categoria\": \"Casa\",\n    \"precoVenda\": 129.90,\n    \"quantidadeDisponivel\": 20,\n    \"localizacaoArmazem\": \"Caxias do Sul\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produtos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/produtos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Produto by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/produtos/pLQPFoQBeC-yzgpJd9WH",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produtos",
+						"pLQPFoQBeC-yzgpJd9WH"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Produto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"pLQPFoQBeC-yzgpJd9WH\",\n    \"nome\":\"Cadeira de Praia\",\n    \"categoria\": \"Casa\",\n    \"precoVenda\": 129.90,\n    \"quantidadeDisponivel\": 20,\n    \"localizacaoArmazem\": \"Caxias do Sul\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produtos/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produtos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Funcionario Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/produtos/o7QAFoQBeC-yzgpJYNWY",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produtos",
+						"o7QAFoQBeC-yzgpJYNWY"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
